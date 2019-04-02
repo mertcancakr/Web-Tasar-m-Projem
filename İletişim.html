@@ -2,6 +2,10 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 * {
   box-sizing: border-box;
@@ -13,7 +17,7 @@
 .menuitem {
   padding: 8px;
   margin-top: 7px;
-  border-bottom: 1px solid #e17981;
+  border-bottom: 1px solid lightblue;
 }
 .main {
   float: left;
@@ -22,7 +26,7 @@
   overflow: hidden;
 }
 .right {
-  background-color: #e17981;
+  background-color: lightblue;
   float: left;
   width: 20%;
   padding: 10px 15px;
@@ -45,50 +49,88 @@
     width: 100%;
   }
 }
-.menu .menuitem strong .menuitem {
-  font-family: "MS Serif", "New York", serif;
-}
-.menu .menuitem a strong {
-  font-family: "MS Serif", "New York", serif;
-}
 </style>
 </head>
 <body style="font-family:Verdana;">
 
-<div style="background-color:#1e867e;padding:15px;">
-  <h1>Mertcan Çakır</h1>
-  <h3 class="menuitem">AĞ İŞLETMENLİĞİ - CİSCO PACKET TRACER</h3>
+<div style="background-color:#C0C0C0;padding:15px;">
+  <h1 align="left"><em>Mertcan Çakır</em></h1>
+  <h3 align="left" class="menuitem"><em>AĞ İŞLETMENLİĞİ - CİSCO PACKET TRACER</em></h3>
+  </div>
 </div>
 
 <div style="overflow:auto">
   <div class="menu">
-    <div class="menuitem"> <strong><a href="index.html" class="menuitem">Ana Sayfa</a></strong> </div>
-    <div class="menuitem"><a href="Hakkımda.html"><strong>Hakkımda</strong></a></div> 
-    <div class="menuitem"><a href="Ağİşletmenliği.html"><strong>Ağ İşletmenliği</strong></a></div> 
-    <div class="menuitem"><a href="index.html"><strong>Cisco Packet Tracer</strong></a></div>
-    <div class="menuitem"><a href="İletişim.html"><strong>İletişim</strong></a></div>
+    <div class="menuitem">
+      <div align="center"><a href="index.html" class="menuitem">Ana Sayfa</a></div>
+    </div>
+    <div class="menuitem">
+      <div align="center"><a href="Hakkımda.html">Hakkımda</a></div>
+    </div> 
+    <div class="menuitem">
+      <div align="center"><a href="Ağİşletmenliği.html">Ağ İşletmenliği</a></div>
+    </div> 
+    <div class="menuitem">
+      <div align="center"><a href="ciscopackettracer.html">Cisco Packet Tracer</a></div>
+    </div>
+    <div class="menuitem">
+      <div align="center"><a href="İletişim.html"class="menuitem"><strong>İletişim</strong></a></div>
+    </div>
   </div>
 
   <div class="main">
-     <h2>İletişim</h2>
-    <p>İletişim Bilgilerim </p>
-    <p>E-Mail mertccakr@gmail.com</p>
-    <img src="CİSCO.JPG" style="width:100%">
+<h1 align="center">İletişim</h1>
+<form action="" method="post">
+          <div class="form_settings">
+            <p align="center"> <strong>İSİM:</strong>
+              <input class="contact" type="text" name="your_name" value="" /></p>
+            <p align="center"><span><strong>Email Adresi:</strong></span>
+              <input class="contact" type="text" name="your_email" value="" /></p>
+            <p align="center"><span><strong>Mesajınız:</strong></span>
+              <textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea></p>
+            <p align="right" style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="Gönder" /></p>
+      </div>
+    </form>
   </div>
 
   <div class="right">
-    <h2>AĞ İŞLETMENLİĞİ</h2>
-    <p>Bilgisayar sistemlerinin donanım ve yazılım kurulumu, ağ sistemlerinin kurulumu, yönetimi ve ağ ortamı üzerinde yaşanabilecek sorunlar, çözüm yolları ve geniş ağ sistemleri yönetimine yönelik eğitim ve öğretim verilen daldır.</h2>
-    <h2>Cisco Packet Tracer</h2>
-    <p>Cisco Packet Tracer, Cisco Networking Academy eğitmen ve öğrencileri için hazırlanmış, gerçek Cisco Router ve Switchlere ihtiyaç duymadan ağ topolojileri oluşturmaya ve adı geçen cihazların konfigürasyonunu yapmaya yarayan bir simülatör programıdır.</p>
-    <h2>Cisco Packet Tracer Sanal Ağ Örnekleri</h2>
-    <p>Sanal Ağ Örnekleri</p>
+    <h3>ARA</h3>
+            <form method="post" action="#" id="search_form">
+              <p>
+                <input class="search" type="text" name="search_field" value="Buraya yazınız....." />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="search.png" alt="Search" title="Search" />
+              </p>
+            </form>
+            
+            
+            <h2>&nbsp;</h2>
+            <h2>Sosyal Medya</h2>
+            <br>
+
+            <p>Simgelerin üstüne tıklayarak istediğiniz sosyal medya profilime gidebilirsiniz.</p><br>
+    <div class="sosyalbutonlar">
+
+      <a href="https://www.facebook.com/profile.php?id=100013316565760" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/mertccakr" target="_blank" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/mertccakr/" target="_blank" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/channel/UC8uwD680xqM0O3Hb0vweTIg?view_as=subscriber" target="_blank" class="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+      </div>
+   <h2>&nbsp;</h2>
+   <h2>WhatsApp'tan Ulaşınız..</h2> 
+   <br>
+   <p>Simgenin Üstüne Basarak Anında Mesaj Atabilirsiniz<p> <br>
+    <a href="https://api.whatsapp.com/send?phone=905418971251"> <img title="WhatsAppa gider" src="whatsapp.png" border="0" height="100"> </a>
+
   </div>
 </div>
 
 
-<div style="background-color: #1e867e ;text-align:center;padding:10px;margin-top:7px;font-size:12px;">Tüm hakları saklıdır veya aynı anlamı taşıyan Her hakkı saklıdır, Her türlü hakkı saklıdır, telif hakkı kapsamında kullanılan telif hakkı uyarısıdır.</div>
+<<div id="content_footer"></div>
+<div style="background-color: #C0C0C0 ;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
+<p><a href="index.html">Ana Sayfa</a> | <a href="Hakkımda.html">Hakkımda</a> | <a href="Ağİşletmenliği.html.html">Ağ İşletmenliği</a> | <a href="ciscopackettracer.html">Cisco Packet Tracer</a> | <a href="İletişim.html"><strong>İletişim</strong></a></p></div>
+
+
+
 
 </body>
 </html>
-
