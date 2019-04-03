@@ -2,106 +2,180 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <style>
 * {
   box-sizing: border-box;
 }
-.menu {
-  float: left;
-  width: 20%;
-}
-.menuitem {
-  padding: 8px;
-  margin-top: 7px;
-  border-bottom: 1px solid lightblue;
-}
-.main {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-  overflow: hidden;
-}
-.right {
-  background-color: lightblue;
-  float: left;
-  width: 20%;
-  padding: 10px 15px;
-  margin-top: 7px;
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
+[class*="col-"] {
+  float: left;
+  padding: 15px;
 }
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
 </style>
+                                               <!--LİNK RENGİ-->
+<style type="text/css">
+a.ornek-link {
+ 
+font-weight: bold;
+color: black;
+font-style: oblique;
+font-family: Arial, Helvetica, sans-serif;
+text-decoration: none;
+vertical-align: baseline;
+}
+ 
+a.ornek-link:hover {
+ 
+font-weight: bold;
+color: maroon;
+font-style: oblique;
+font-family: Arial, Helvetica, sans-serif;
+text-decoration: none;
+vertical-align: baseline;
+}
+ 
+</style>
+                                               <!--LİNK RENGİ-->
 </head>
-<body style="font-family:Verdana;">
+<body>
 
-<div style="background-color:#C0C0C0;padding:15px;">
-  <h1 align="left"><em>Mertcan Çakır</em></h1>
-  <h3 align="left" class="menuitem"><em>AĞ İŞLETMENLİĞİ - CİSCO PACKET TRACER</em></h3>
-  </div>
+ 
+<div class="header">
+    <h1>Mertcan Çakır</h1>
+    <h4>AĞ İŞLETMENLİĞİ - CİSCO PACKET TRACER</h3>
 </div>
+         <!--BU ALAN SİTEMİN BAŞLIĞI-->
 
-<div style="overflow:auto">
-  <div class="menu">
-    <div class="menuitem">
-      <div align="center"><a href="index.html" class="menuitem">Ana Sayfa</a></div>
-    </div>
-    <div class="menuitem">
-      <div align="center"><a href="Hakkımda.html">Hakkımda</a></div>
-    </div> 
-    <div class="menuitem">
-      <div align="center"><a href="Ağİşletmenliği.html">Ağ İşletmenliği</a></div>
-    </div> 
-    <div class="menuitem">
-      <div align="center"><a href="ciscopackettracer.html">Cisco Packet Tracer</a></div>
-    </div>
-    <div class="menuitem">
-      <div align="center"><a href="İletişim.html"class="menuitem"><strong>İletişim</strong></a></div>
-    </div>
-  </div>
 
-  <div class="main">
-<h1 align="center">İletişim</h1>
+<div class="row">
+<div class="col-3 col-s-3 menu">
+      <ul>
+        <li align="center"><a href="index.html" class="ornek-link">Ana Sayfa</a></li>
+        <li align="center"><a href="Hakkımda.html" class="ornek-link">Hakkımda</a></li>
+        <li align="center"><a href="Ağİşletmenliği.html" class="ornek-link">Ağ İşletmenliği</a></li>
+        <li align="center"><a href="ciscopackettracer.html" class="ornek-link">Cisco Packet Tracer</a></li>
+        <li align="center"><a href="veritabani.html" class="ornek-link">Veri Tabanı</a></li>
+        <li align="center"><a href="İletişim.html" class="ornek-link"><strong>İletişim</strong></a></li>
+      </ul>
+</div>
+         <!--BU ALAN SİTEMİN SOL TARAFTAKİ MENÜLERİ-->
+
+  <div class="col-6 col-s-9">
+<h1 align="center">İletişim</h1> <br>
 <form action="" method="post">
           <div class="form_settings">
-            <p align="center"> <strong>İSİM:</strong>
-              <input class="contact" type="text" name="your_name" value="" /></p>
-            <p align="center"><span><strong>Email Adresi:</strong></span>
-              <input class="contact" type="text" name="your_email" value="" /></p>
-            <p align="center"><span><strong>Mesajınız:</strong></span>
-              <textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea></p>
+            <p align="center"> <strong>İSİM:</strong> <br>
+              <input class="contact" type="text" name="your_name" value="" /></p> <br>
+            <p align="center"><span><strong>Email Adresi:</strong></span> <br>
+              <input class="contact" type="text" name="your_email" value="" /></p> <br>
+            <p align="center"><span><strong>Mesajınız:</strong></span> <br>
+              <textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea></p> <br>
             <p align="right" style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="Gönder" /></p>
+            <!--İLETİŞİM BÖLÜMÜNDEKİ FORMUN KODLARI-->
       </div>
     </form>
   </div>
+          <!--BU ALAN SİTENİN ANA YAZI YERİ-->
 
-  <div class="right">
-    <h3>ARA</h3>
+  <div class="col-3 col-s-12">
+<div class="aside">
+    <h3>Site İçinde Ara...</h3>
             <form method="post" action="#" id="search_form">
               <p>
                 <input class="search" type="text" name="search_field" value="Buraya yazınız....." />
                 <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="search.png" alt="Search" title="Search" />
               </p>
             </form>
-            
+            <!--BU KOD ARAMA BUTONU İÇİN.-->
             
             <h2>&nbsp;</h2>
             <h2>Sosyal Medya</h2>
@@ -115,22 +189,25 @@
       <a href="https://www.instagram.com/mertccakr/" target="_blank" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
       <a href="https://www.youtube.com/channel/UC8uwD680xqM0O3Hb0vweTIg?view_as=subscriber" target="_blank" class="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
       </div>
+        <!--BU KOD SOSYAL MEDYA BUTONLARI İÇİN.-->
    <h2>&nbsp;</h2>
-   <h2>WhatsApp'tan Ulaşınız..</h2> 
-   <br>
-   <p>Simgenin Üstüne Basarak Anında Mesaj Atabilirsiniz<p> <br>
-    <a href="https://api.whatsapp.com/send?phone=905418971251"> <img title="WhatsAppa gider" src="whatsapp.png" border="0" height="100"> </a>
-
-  </div>
+    
+   <h2>WhatsApp'tan Ulaşınız..</h2>
+  <br>
+ <p>Simgenin Üstüne Basarak Anında Mesaj Atabilirsiniz<p> <br>
+ <a href="https://api.whatsapp.com/send?phone=905418971251" target="_blank"> <img title="WhatsAppa gider" src="whatsapp.png" border="0" height="100"> </a>
+       <!--WHATSAPP KODU-->
 </div>
+</div>
+</div>
+         <!--SİTENİN SAĞ KISIMDAKİ METİN BÖLÜMÜ.-->
 
 
-<<div id="content_footer"></div>
-<div style="background-color: #C0C0C0 ;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
-<p><a href="index.html">Ana Sayfa</a> | <a href="Hakkımda.html">Hakkımda</a> | <a href="Ağİşletmenliği.html.html">Ağ İşletmenliği</a> | <a href="ciscopackettracer.html">Cisco Packet Tracer</a> | <a href="İletişim.html"><strong>İletişim</strong></a></p></div>
-
-
-
+<div class="footer">
+  <p><a href="index.html" class="ornek-link">Ana Sayfa</a> | <a href="Hakkımda.html" class="ornek-link">Hakkımda</a> | <a href="Ağİşletmenliği.html" class="ornek-link">Ağ İşletmenliği</a> | <a href="ciscopackettracer.html" class="ornek-link">Cisco Packet Tracer</a> | <a href="İletişim.html" class="ornek-link"><strong>İletişim</strong></a></p>
+  <p>Tüm hakları saklıdır</p>
+         <!--BU KOD SAYFANIN EN ALTINDAKİ MENÜ İÇİN.-->
+</div>
 
 </body>
 </html>

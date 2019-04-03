@@ -6,112 +6,187 @@
 * {
   box-sizing: border-box;
 }
-.menu {
-  float: left;
-  width: 20%;
-}
-.menuitem {
-  padding: 8px;
-  margin-top: 7px;
-  border-bottom: 1px solid lightblue;
-}
-.main {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-  overflow: hidden;
-}
-.right {
-  background-color: lightblue;
-  float: left;
-  width: 20%;
-  padding: 10px 15px;
-  margin-top: 7px;
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
+[class*="col-"] {
+  float: left;
+  padding: 15px;
 }
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
 </style>
+                                               <!--LİNK RENGİ-->
+<style type="text/css">
+a.ornek-link {
+ 
+font-weight: bold;
+color: black;
+font-style: oblique;
+font-family: Arial, Helvetica, sans-serif;
+text-decoration: none;
+vertical-align: baseline;
+}
+ 
+a.ornek-link:hover {
+ 
+font-weight: bold;
+color: maroon;
+font-style: oblique;
+font-family: Arial, Helvetica, sans-serif;
+text-decoration: none;
+vertical-align: baseline;
+}
+ 
+</style>
+                                               <!--LİNK RENGİ-->
 </head>
-<body style="font-family:Verdana;">
+<body>
 
-<div style="background-color:#C0C0C0;padding:15px;">
-  <h1 align="left"><em>Mertcan Çakır</em></h1>
-  <h3 align="left" class="menuitem"><em>AĞ İŞLETMENLİĞİ - CİSCO PACKET TRACER</em></h3>
-  </div>
+ 
+<div class="header">
+    <h1>Mertcan Çakır</h1>
+    <h4>AĞ İŞLETMENLİĞİ - CİSCO PACKET TRACER</h3>
 </div>
+         <!--BU ALAN SİTEMİN BAŞLIĞI-->
 
-<div style="overflow:auto">
-  <div class="menu">
-    <div class="menuitem">
-      <div align="center"><a href="index.html" class="menuitem"><strong>Ana Sayfa</strong></a></div>
-    </div>
-    <div class="menuitem">
-      <div align="center"><a href="Hakkımda.html">Hakkımda</a></div>
-    </div> 
-    <div class="menuitem">
-      <div align="center"><a href="Ağİşletmenliği.html">Ağ İşletmenliği</a></div>
-    </div> 
-    <div class="menuitem">
-      <div align="center"><a href="ciscopackettracer.html">Cisco Packet Tracer</a></div>
-    </div>
-    <div class="menuitem">
-      <div align="center"><a href="İletişim.html">İletişim</a></div>
-    </div>
-  </div>
 
-  <div class="main">
+<div class="row">
+<div class="col-3 col-s-3 menu">
+      <ul>
+        <li align="center"><a href="index.html" class="ornek-link"><strong>Ana Sayfa</strong></a></li>
+        <li align="center"><a href="Hakkımda.html" class="ornek-link">Hakkımda</a></li>
+        <li align="center"><a href="Ağİşletmenliği.html" class="ornek-link">Ağ İşletmenliği</a></li>
+        <li align="center"><a href="ciscopackettracer.html" class="ornek-link">Cisco Packet Tracer</a></li>
+        <li align="center"><a href="veritabani.html" class="ornek-link">Veri Tabanı</a></li>
+        <li align="center"><a href="İletişim.html" class="ornek-link">İletişim</a></li>
+      </ul>
+</div>
+         <!--BU ALAN SİTEMİN SOL TARAFTAKİ MENÜLERİ-->
+  
+
+<div class="col-6 col-s-9">
      
-     <marquee width="100%" scrollamount="5" height="400">  <!-- direction="up" YAZI YUKARIDAN AŞŞAĞIYA DOĞRU GİDER -->
+        <marquee width="100%" scrollamount="20" height="400">  <!-- direction="up" YAZI YUKARIDAN AŞŞAĞIYA DOĞRU GİDER -->
+         <!--scrollamount="20" RESİMLERİN GEÇİŞ HIZI-->
+     <img alt="" src="https://ismek.ist/files/ismekOrg/Image/img_brans/brans_yenisitegaleri/Cisco_Network_Egitimi_1/2.jpg"/>  
+     <img alt="" src="https://ismek.ist/files/ismekOrg/Image/img_brans/brans_yenisitegaleri/Cisco_Network_Egitimi_2/1.jpg"/>  
+     <img alt="" src="https://ismek.ist/files/ismekOrg/Image/img_brans/brans_yenisitegaleri/Cisco_Network_Egitimi_2/2.jpg"/>  
+     <img alt="" src="https://ismek.ist/files/ismekOrg/Image/img_brans/brans_yenisitegaleri/Cisco_Network_Egitimi_2/3.jpg"/>  
+        </marquee>
+         <!--BU KODLAR ANA SAYFADAKİ KAYAN RESİM KODU.-->
 
-<img alt="" src="https://ismek.ist/files/ismekOrg/Image/img_brans/brans_yenisitegaleri/Cisco_Network_Egitimi_1/2.jpg" />  
-
-<img alt="" src="https://ismek.ist/files/ismekOrg/Image/img_brans/brans_yenisitegaleri/Cisco_Network_Egitimi_2/1.jpg" />  
-
-<img alt="" src="https://ismek.ist/files/ismekOrg/Image/img_brans/brans_yenisitegaleri/Cisco_Network_Egitimi_2/2.jpg" />  
-
-<img alt="" src="https://ismek.ist/files/ismekOrg/Image/img_brans/brans_yenisitegaleri/Cisco_Network_Egitimi_2/3.jpg" />  
-</marquee>
-
-<h2 align="center">BURAYA BAŞLIK GELİCEK</h2>
-    <p>BURAYA PARAGRAF GELİCEK</p>
-     </div>
-    
+     <h2 align="center">BURAYA BAŞLIK GELİCEK</h2>
+     <p>BURAYA PARAGRAF GELİCEK</p>
+</div>
+         <!--BU ALAN SİTENİN ANA YAZI YERİ-->
  
 
-  <div class="right">
-    <h3>ARA</h3>
-            <form method="post" action="#" id="search_form">
-              <p>
-                <input class="search" type="text" name="search_field" value="Buraya yazınız....." />
-                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="search.png" alt="Search" title="Search" />
-              </p>
-            </form>
-    <p><a href="CiscoPacketTracer.html">Cisco Packet Tracer</a></p>
-    <p>Ağ topolojileri oluşturmaya ve adı geçen cihazların konfigürasyonunu yapmaya yarayan bir simülatör programıdır..    </p>
-    <p><a href="Ağİşletmenliği.html.html">Ağ İşletmenliği</a></p>
-    <p>Ağ ortamı üzerinde yaşanabilecek sorunlar, çözüm yolları ve geniş ağ sistemleri yönetimine yönelik eğitim ve öğretim verilen daldır...</p>
-  </div>
-</div><div id="content_footer"></div>
-<div style="background-color: #C0C0C0 ;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
-<p><a href="index.html"><strong>Ana Sayfa</strong></a> | <a href="Hakkımda.html">Hakkımda</a> | <a href="Ağİşletmenliği.html.html">Ağ İşletmenliği</a> | <a href="ciscopackettracer.html">Cisco Packet Tracer</a> | <a href="İletişim.html">İletişim</a></p></div>
+<div class="col-3 col-s-12">
+<div class="aside">
+    <h3>Site İçinde Ara...</h3>
+        <form method="post" action="#" id="search_form">
+         <p>
+          <input class="search" type="text" name="search_field" value="Buraya yazınız....." />
+          <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="search.png" alt="Search" title="Search" />
+         </p>
+        </form>
+         <!--BU KOD ARAMA BUTONU İÇİN.-->
+
+</div>
+</div>
+</div>
+          <!--SİTENİN SAĞ KISIMDAKİ METİN BÖLÜMÜ.-->
 
 
-
+<div class="footer">
+  <p><a href="index.html" class="ornek-link"><strong>Ana Sayfa</strong></a> | <a href="Hakkımda.html" class="ornek-link">Hakkımda</a> | <a href="Ağİşletmenliği.html" class="ornek-link">Ağ İşletmenliği</a> | <a href="ciscopackettracer.html" class="ornek-link">Cisco Packet Tracer</a> | <a href="İletişim.html" class="ornek-link">İletişim</a></p>
+  <p>Tüm hakları saklıdır</p>
+         <!--BU KOD SAYFANIN EN ALTINDAKİ MENÜ İÇİN.-->
+</div>
 
 </body>
 </html>
