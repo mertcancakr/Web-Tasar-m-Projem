@@ -149,21 +149,131 @@ vertical-align: baseline;
   
 
 <div class="col-6 col-s-9">
-     
-     <img src="Cisco.png"/>
       
-      <h2 align="center">Packet Tracer nedir?</h2>
-     
-     <p>Sistem uzmanları veya bilişimle uğraşan bizler illaki Packet Tracer adını bir yerlerden duymuşuzdur. Peki bu Packet Tracer nedir ve ne iş yarar kısaca anlatalım.</p> <br>
-     
-     <p>Packet Tracer, Cisco tarafından üretilen Router, Switch, Hub gibi cihazların gerçek ağda kurulmadan önce ve hata payını en aza indirmek ve sistemi projelendirmek adına, bütün ayrıntıları ile (Cihaz komut sistemi arayüzünden tutun da, Ip adresleri, DHCP yapılandırması gibi ) gerçek bir sistem oluşturma simülasyon programıdır.</p> <br>
-     
-     <p>Bu simülasyon programında sadece Cisco ya ait switch gibi cihazlar bulunmamakta bu cihazlara server client,ip telefon gibi ağ ekosistemine eklenebileceği muhtemel ne varsa Packet Tracer içerisinde bulunmaktadır. Cisco Networking Academy ye ait bu program ücretsizdir.</p> <br>
-     
-     <p>Kendi izlemim olarak söylemeliyim ki, Packet Tracer ile ilk tanıştığımda program ile yapılabilecekleri çok şaşkınlıkla kaşıladım. Her cihaza ait bu kadar ayrıntılı bir yönetim olabileceği aklımdan geçmemişti.</p> <br>
-     
-     <p>Siz de eğer merak ediyor ve bilişim sektörüne gönül verenlerden iseniz aşağıdaki linkten programı indirebilirsiniz.</p> <br>
-     
+      <h2 align="center">Cisco Basit CLI Komutları</h2>
+      
+      
+      <p align="center"><strong>User / Privileged Mode: </strong> </p>
+      <p>Router><strong>enable </strong></p>
+      <p>Router#</p>
+      <p>Router#<strong>disable</strong></p>
+      <p>Router></p>
+      <img width="450" src="enable-disable.png">
+      
+      
+      <p align="center"><strong>Global Configuration Mode:</strong></p>
+      <p>Router# <strong>configure terminal:</strong></p>
+      <p>Router(config)#</p>
+      <img width="450" src="configterminal.png">
+      
+      
+      <p align="center"><strong>Interface Configuration Mode:</strong></p>
+      <p>Router(config)# <strong>interface fastethernet 0/0</strong> </p>
+      <p>Router(config-if)#</p>
+      <img width="450" src="interfacefastethernet.png">
+      
+      
+      <p align="center"><strong>Line Configuration Mode (Console – Telnet):</strong></p>
+      <p>Router(config)# <strong>line console 0</strong></p>
+      <p>Router(config-line)# <strong>password deneme123</strong></p>
+      <p>Router(config-line)# <strong>login</strong></p>
+      <img width="450" src="consoleşifresi.png">
+      <p>Router(config)#<strong>line vty 0 4</strong></p>
+      <p>Router(config-line)# <strong>password deneme123</strong></p>
+      <p>Router(config-line)# <strong>login</strong></p>
+      <img width="450" src="telnetşifresi.png">
+      
+      
+      <p align="center"><strong>Router Config Mode:</strong></p>
+      <p>Router(config)# <strong>router rip</strong></p>
+      <p>Router(config-router)#</p>
+      <p>Router(config-router)# <strong>network 192.168.0.0</strong></p>
+      <p>Router(config-router)# <strong>network 192.168.1.0</strong></p>
+      <img width="450" src="routerrip.png">
+       
+
+       <p align="center"> <strong>Komut Satırı Özellikleri</strong></p>
+      <table border="10" align="center">
+        
+        <tr>
+          <td>Ctrl-A</td>
+          <td>Komut satırının başına döner</td>
+        </tr>
+       
+        <tr>
+          <td>Ctrl-E</td>
+          <td>Komut satırının sonuna gider</td>
+        </tr>
+       
+        <tr>
+          <td>Esc-B</td>
+          <td>Bir sözcük geri gider</td>
+        </tr>
+        
+        <tr>
+          <td>Ctrl-B</td>
+          <td>Bir karakter geri gider</td>
+        </tr>
+        
+        <tr>
+          <td>Ctrl-F</td>
+          <td>Bir karakter ileri gider</td>
+        </tr>
+       
+        <tr>
+          <td>Ctrl-D</td>
+          <td>Bir tek karakter siler</td>
+        </tr>
+      
+      </table>
+
+
+      <p align="center"><strong>CLI Geçmişini Görüntülemek</strong></p>
+      <p>Router#<strong>show history</strong></p>
+      <p>Router#<strong>show terminal</strong></p>
+      
+
+      <p align="center"><strong>Cihaz Bilgisi Almak</strong></p>
+      <p>Router#<strong>show version</strong></p>
+      <p>Router#<strong>show flash</strong></p>
+
+      <p align="center"><strong>Hostname Değiştirme</strong></p>
+      <p>Router(config)#<strong>hostname deneme123</strong></p>
+      <img width="450" src="hostname.png">
+
+
+      <p align="center"><strong>Açılış Mesajı (BANNER MOTD)</strong></p>
+      <p>Router(config)# <strong>banner motd #</strong></p>
+      <p>Enter TEXT message. End with the character ‘#’</p>
+      <p><storng>Welcome</strong></p>
+      <p><strong>#</strong></p>
+      <p>Router(config)#</p>
+      <img width="450" src="bannermotd.png">
+      <img width="450" src="bannermotd2.png">
+
+
+      <p> <strong>Enable - Aux Şifreleme</strong></p>
+      <p>Router(config)#<strong>enable password deneme123</strong></p>
+      <p>Router(config)#<strong>enable secret deneme123</strong></p>
+      <img width="450" src="enableşifre.png">
+      <p>Router(config)#<strong>line aux 0</strong></p>
+      <p>Router(config)#<strong>password deneme123</strong></p>
+      <p>Router(config)#<strong>login</strong></p>
+      <img width="450" src="auxşifre.png">
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
      
 
 </div>
@@ -181,10 +291,9 @@ vertical-align: baseline;
         </form>
          <!--BU KOD ARAMA BUTONU İÇİN.-->
 
-         <h3>Ağ Temelleri Hakkında Diğer Konularımız;</h3>
-         </ul>
+         <h3>Cisco Packet Tracer Hakkında Diğer Konularımız;</h3>
          <li align="center"><a href="ciscoclikomutları.html" class="ornek-link">Cisco CLI Komutları</a></li>
-         </ul>
+
 
 </div>
 </div>
