@@ -1,0 +1,9 @@
+﻿ @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.iletisim{font-family:"Open Sans";width:100%;margin-left:0%; margin-top:25px; background-color:#33b5e5}
+.iletisim p{font-family:"Open Sans";color:black;padding:10px;text-align:center;font-size:25px}
+.iletisim input{font-family:"Open Sans";border:1px solid white;width:80%;padding:10px;margin-left:10%;margin-bottom:10px;color:red}
+.iletisim input:hover{border:1px solid red}
+.iletisim textarea{font-family:"Open Sans";border:1px solid white;width:80%;padding:10px;margin-left:10%;margin-bottom:10px;resize:none;color:black}
+.iletisim textarea:hover{border:1px solid red}
+.iletisim button{cursor:pointer;width:20%;padding:10px;margin-left:10%;margin-bottom:10px;resize:none;color:black;border:none;background-color:white;}
+.iletisim button:hover{color:white;background-color:red}

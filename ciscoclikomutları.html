@@ -1,198 +1,79 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
-
-.header {
-  background-color: #33b5e5;
-  color: #ffffff;
-  padding: 15px;
-}
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: #33b5e5;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.menu li:hover {
-  background-color: #0099cc;
-}
-
-.aside {
-  background-color: #33b5e5;
-  padding: 15px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.footer {
-  background-color: #0099cc;
-  color: #ffffff;
-  text-align: center;
-  font-size: 12px;
-  padding: 15px;
-}
-
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-</style>
-                                               <!--LİNK RENGİ-->
-<style type="text/css">
-a.ornek-link {
- 
-font-weight: bold;
-color: black;
-font-style: oblique;
-font-family: Arial, Helvetica, sans-serif;
-text-decoration: none;
-vertical-align: baseline;
-}
- 
-a.ornek-link:hover {
- 
-font-weight: bold;
-color: maroon;
-font-style: oblique;
-font-family: Arial, Helvetica, sans-serif;
-text-decoration: none;
-vertical-align: baseline;
-}
- 
-</style>
-                                               <!--LİNK RENGİ-->
+<meta charset="utf-8">
+<title>Mertcan Blog</title>
+<link rel="stylesheet" type="text/css" href="css/layaout.css">
+<link rel="stylesheet" type="text/css" href="css/menülink.css">
 </head>
+ 
 <body>
+ 
+ 
+ <div class="header">
+    <h1>Mertcan Blog</h1>
+    <h4>AĞ İŞLETMENLİĞİ - CİSCO PACKET TRACER</h3>
+ </div>
 
  
-<div class="header">
-    <h1>Mertcan Çakır</h1>
-    <h4>AĞ İŞLETMENLİĞİ - CİSCO PACKET TRACER</h3>
-</div>
-         <!--BU ALAN SİTEMİN BAŞLIĞI-->
-
-
-<div class="row">
-<div class="col-3 col-s-3 menu">
-      <ul>
-        <li align="center"><a href="index.html" class="ornek-link">Ana Sayfa</a></li>
-        <li align="center"><a href="Hakkımda.html" class="ornek-link">Hakkımda</a></li>
-        <li align="center"><a href="Ağİşletmenliği.html" class="ornek-link">Ağ Temelleri</a></li>
-        <li align="center"><a href="ciscopackettracer.html" class="ornek-link"><strong>Cisco Packet Tracer</strong></a></li>
-        <li align="center"><a href="veritabani.html" class="ornek-link">Veri Tabanı</a></li>
-        <li align="center"><a href="İletişim.html" class="ornek-link">İletişim</a></li>
-      </ul>
-</div>
-         <!--BU ALAN SİTEMİN SOL TARAFTAKİ MENÜLERİ-->
+ <div class="row">
+ <div class="col-3 col-s-3 menu">
+   <ul>
+       <li align="center"><a href="index.html" class="ornek-link">Ana Sayfa</a></li>
+       <li align="center"><a href="Hakkımda.html" class="ornek-link">Hakkımda</a></li>
+       <li align="center"><a href="ağtemelleri.html" class="ornek-link">Ağ Temelleri</a></li>
+       <li align="center"><a href="ciscopackettracer.html" class="ornek-link">Cisco Packet Tracer</a></li>
+       <li align="center"><a href="İletişim.html" class="ornek-link">İletişim</a></li>
+   </ul>
+ </div>
   
-
-<div class="col-6 col-s-9">
+ 
+ <div class="col-6 col-s-9">
       
-      <h2 align="center">Cisco Basit CLI Komutları</h2>
+      <h1 align="center">Cisco Basit CLI Komutları</h1>
       
       
-      <p align="center"><strong>User / Privileged Mode: </strong> </p>
+      <h2 align="center"><strong>User / Privileged Mode: </strong> </h2>
       <p>Router><strong>enable </strong></p>
       <p>Router#</p>
       <p>Router#<strong>disable</strong></p>
       <p>Router></p>
-      <img width="450" src="enable-disable.png">
+      <img width="450" src="img/enable-disable.png">
       
       
-      <p align="center"><strong>Global Configuration Mode:</strong></p>
+      <h2 align="center"><strong>Global Configuration Mode:</strong></h2>
       <p>Router# <strong>configure terminal:</strong></p>
       <p>Router(config)#</p>
-      <img width="450" src="configterminal.png">
+      <img width="450" src="img/configterminal.png">
       
       
-      <p align="center"><strong>Interface Configuration Mode:</strong></p>
+      <h2 align="center"><strong>Interface Configuration Mode:</strong></h2>
       <p>Router(config)# <strong>interface fastethernet 0/0</strong> </p>
       <p>Router(config-if)#</p>
-      <img width="450" src="interfacefastethernet.png">
+      <img width="450" src="img/interfacefastethernet.png">
       
       
-      <p align="center"><strong>Line Configuration Mode (Console – Telnet):</strong></p>
+      <h2 align="center"><strong>Line Configuration Mode (Console – Telnet):</strong></h2>
       <p>Router(config)# <strong>line console 0</strong></p>
       <p>Router(config-line)# <strong>password deneme123</strong></p>
       <p>Router(config-line)# <strong>login</strong></p>
-      <img width="450" src="consoleşifresi.png">
+      <img width="450" src="img/consoleşifresi.png">
       <p>Router(config)#<strong>line vty 0 4</strong></p>
       <p>Router(config-line)# <strong>password deneme123</strong></p>
       <p>Router(config-line)# <strong>login</strong></p>
-      <img width="450" src="telnetşifresi.png">
+      <img width="450" src="img/telnetşifresi.png">
       
       
-      <p align="center"><strong>Router Config Mode:</strong></p>
+      <h2 align="center"><strong>Router Config Mode:</strong></h2>
       <p>Router(config)# <strong>router rip</strong></p>
       <p>Router(config-router)#</p>
       <p>Router(config-router)# <strong>network 192.168.0.0</strong></p>
       <p>Router(config-router)# <strong>network 192.168.1.0</strong></p>
-      <img width="450" src="routerrip.png">
+      <img width="450" src="img/routerrip.png">
        
 
-       <p align="center"> <strong>Komut Satırı Özellikleri</strong></p>
+       <h2 align="center"> <strong>Komut Satırı Özellikleri</strong></h2>
       <table border="10" align="center">
         
         <tr>
@@ -228,84 +109,60 @@ vertical-align: baseline;
       </table>
 
 
-      <p align="center"><strong>CLI Geçmişini Görüntülemek</strong></p>
+      <h2 align="center"><strong>CLI Geçmişini Görüntülemek</strong></h2>
       <p>Router#<strong>show history</strong></p>
       <p>Router#<strong>show terminal</strong></p>
       
 
-      <p align="center"><strong>Cihaz Bilgisi Almak</strong></p>
+      <h2h2 align="center"><strong>Cihaz Bilgisi Almak</strong></h2>
       <p>Router#<strong>show version</strong></p>
       <p>Router#<strong>show flash</strong></p>
 
-      <p align="center"><strong>Hostname Değiştirme</strong></p>
+      <h2h2 align="center"><strong>Hostname Değiştirme</strong></h2>
       <p>Router(config)#<strong>hostname deneme123</strong></p>
-      <img width="450" src="hostname.png">
+      <img width="450" src="img/hostname.png">
 
 
-      <p align="center"><strong>Açılış Mesajı (BANNER MOTD)</strong></p>
+      <h2 align="center"><strong>Açılış Mesajı (BANNER MOTD)</strong></h2>
       <p>Router(config)# <strong>banner motd #</strong></p>
       <p>Enter TEXT message. End with the character ‘#’</p>
       <p><storng>Welcome</strong></p>
       <p><strong>#</strong></p>
       <p>Router(config)#</p>
-      <img width="450" src="bannermotd.png">
-      <img width="450" src="bannermotd2.png">
+      <img width="450" src="img/bannermotd.png">
+      <img width="450" src="img/bannermotd2.png">
 
-
-      <p> <strong>Enable - Aux Şifreleme</strong></p>
+      
+      <h2 align="center"> <strong>Enable - Aux Şifreleme</strong></h2>
       <p>Router(config)#<strong>enable password deneme123</strong></p>
       <p>Router(config)#<strong>enable secret deneme123</strong></p>
-      <img width="450" src="enableşifre.png">
+      <img width="450" src="img/enableşifre.png">
       <p>Router(config)#<strong>line aux 0</strong></p>
       <p>Router(config)#<strong>password deneme123</strong></p>
       <p>Router(config)#<strong>login</strong></p>
-      <img width="450" src="auxşifre.png">
+      <img width="450" src="img/auxşifre.png">
+ </div>
 
 
-
-
-
-
-
-
-
-
-      
-
-
-
-     
-
+ <div class="col-3 col-s-12">
+ <div class="aside">
+  <h3>Site İçinde Ara...</h3>
+   <form method="post" action="#" id="search_form">
+    <p>
+     <input class="search" type="text" name="search_field" value="Buraya yazınız....." />
+     <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="img/search.png" alt="Search" title="Search" />
+    </p>
+   </form>
+     <h3>Cisco Packet Tracer Hakkında Diğer Konularımız;</h3>
+      <li align="center"><a href="ciscoclikomutları.html" class="ornek-link">Cisco CLI Komutları</a></li>
 </div>
-         <!--BU ALAN SİTENİN ANA YAZI YERİ-->
- 
-
-    <div class="col-3 col-s-12">
-<div class="aside">
-    <h3>Site İçinde Ara...</h3>
-        <form method="post" action="#" id="search_form">
-         <p>
-          <input class="search" type="text" name="search_field" value="Buraya yazınız....." />
-          <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="search.png" alt="Search" title="Search" />
-         </p>
-        </form>
-         <!--BU KOD ARAMA BUTONU İÇİN.-->
-
-         <h3>Cisco Packet Tracer Hakkında Diğer Konularımız;</h3>
-         <li align="center"><a href="ciscoclikomutları.html" class="ornek-link">Cisco CLI Komutları</a></li>
+ </div>
+ </div>
 
 
-</div>
-</div>
-</div>
-          <!--SİTENİN SAĞ KISIMDAKİ METİN BÖLÜMÜ.-->
-
-
-<div class="footer">
-  <p><a href="index.html" class="ornek-link">Ana Sayfa</a> | <a href="Hakkımda.html" class="ornek-link">Hakkımda</a> | <a href="Ağİşletmenliği.html" class="ornek-link"><strong>Ağ Temelleri</strong></a> | <a href="ciscopackettracer.html" class="ornek-link">Cisco Packet Tracer</a> | <p><a href="veritabani.html" class="ornek-link">Veri Tabanı</a> | <a href="İletişim.html" class="ornek-link">İletişim</a></p>
+ <div class="footer">
+  <p><a href="index.html" class="ornek-link">Ana Sayfa</a> | <a href="Hakkımda.html" class="ornek-link">Hakkımda</a> | <a href="ağtemelleri.html" class="ornek-link">Ağ Temelleri</a> | <a href="ciscopackettracer.html" class="ornek-link">Cisco Packet Tracer</a> | <a href="İletişim.html" class="ornek-link">İletişim</a></p>
   <p>Tüm hakları saklıdır</p>
-         <!--BU KOD SAYFANIN EN ALTINDAKİ MENÜ İÇİN.-->
-</div>
-
+ </div>
 </body>
 </html>

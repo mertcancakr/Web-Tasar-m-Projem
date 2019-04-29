@@ -1,198 +1,71 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
-
-.header {
-  background-color: #33b5e5;
-  color: #ffffff;
-  padding: 15px;
-}
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: #33b5e5;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.menu li:hover {
-  background-color: #0099cc;
-}
-
-.aside {
-  background-color: #33b5e5;
-  padding: 15px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.footer {
-  background-color: #0099cc;
-  color: #ffffff;
-  text-align: center;
-  font-size: 12px;
-  padding: 15px;
-}
-
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-</style>
-                                               <!--LİNK RENGİ-->
-<style type="text/css">
-a.ornek-link {
- 
-font-weight: bold;
-color: black;
-font-style: oblique;
-font-family: Arial, Helvetica, sans-serif;
-text-decoration: none;
-vertical-align: baseline;
-}
- 
-a.ornek-link:hover {
- 
-font-weight: bold;
-color: maroon;
-font-style: oblique;
-font-family: Arial, Helvetica, sans-serif;
-text-decoration: none;
-vertical-align: baseline;
-}
- 
-</style>
-                                               <!--LİNK RENGİ-->
+<meta charset="utf-8">
+<title>Mertcan Blog</title>
+<link rel="stylesheet" type="text/css" href="css/layaout.css">
+<link rel="stylesheet" type="text/css" href="css/menülink.css">
 </head>
+ 
 <body>
-
  
-<div class="header">
-    <h1>Mertcan Çakır</h1>
+ 
+ <div class="header">
+    <h1>Mertcan Blog</h1>
     <h4>AĞ İŞLETMENLİĞİ - CİSCO PACKET TRACER</h3>
-</div>
-         <!--BU ALAN SİTEMİN BAŞLIĞI-->
+ </div>
 
-
-<div class="row">
-<div class="col-3 col-s-3 menu">
-      <ul>
-        <li align="center"><a href="index.html" class="ornek-link">Ana Sayfa</a></li>
-        <li align="center"><a href="Hakkımda.html" class="ornek-link"><strong>Hakkımda</strong></a></li>
-        <li align="center"><a href="Ağİşletmenliği.html" class="ornek-link">Ağ Temelleri</a></li>
-        <li align="center"><a href="ciscopackettracer.html" class="ornek-link">Cisco Packet Tracer</a></li>
-        <li align="center"><a href="veritabani.html" class="ornek-link">Veri Tabanı</a></li>
-        <li align="center"><a href="İletişim.html" class="ornek-link">İletişim</a></li>
-      </ul>
-</div>
-         <!--BU ALAN SİTEMİN SOL TARAFTAKİ MENÜLERİ-->
-
-
-<div class="col-6 col-s-9">
-
-	<table border="0">
-		<tr>
-			<td> <img width="400" src="ben.png"> </td>
-		<td> 
-				<h3>Merhaba!</h3>  
-				<p>İstanbul Gelişim Üniversitesinde Bilgisayar Programcılığı öğrencisiyim. Aynı zamanda Bahçelievler Türk Telekom Mesleki ve Teknik Anadolu Lisesi Ağ İşletmenliği mezunuyum. Alanımda kisisel bloglar, videolar ve forum siteleri en büyük yardımcım oluyor diyebilirim..</p> 
-				<h3>Blog Sitemde Bahsedeceğim Konular Bunlardır;</h3>
-		     <ul>
-				<li>Ağ Temelleri</li>
-                <li>Cisco Packet Tracer</li>
-                <li>Veri Tabanı</li>
-			</ul> 
-		</td>
-
-		</tr>
-	</table>
  
-</div>
-         <!--BU ALAN SİTENİN ANA YAZI YERİ-->
+ <div class="row">
+ <div class="col-3 col-s-3 menu">
+   <ul>
+       <li align="center"><a href="index.html" class="ornek-link">Ana Sayfa</a></li>
+       <li align="center"><a href="Hakkımda.html" class="ornek-link">Hakkımda</a></li>
+       <li align="center"><a href="ağtemelleri.html" class="ornek-link">Ağ Temelleri</a></li>
+       <li align="center"><a href="ciscopackettracer.html" class="ornek-link">Cisco Packet Tracer</a></li>
+       <li align="center"><a href="İletişim.html" class="ornek-link">İletişim</a></li>
+   </ul>
+ </div>
+  
+ 
+ <div class="col-6 col-s-9">
+   <table border="0">
+		<tr>
+		 <td> <img width="400" src="img/ben.png"> </td>
+		  <td> 
+		  <h3>Merhaba!</h3>  
+		  <p>İstanbul Gelişim Üniversitesinde Bilgisayar Programcılığı öğrencisiyim. Aynı zamanda Bahçelievler Türk Telekom Mesleki ve Teknik Anadolu Lisesi Ağ İşletmenliği mezunuyum. Alanımda kisisel bloglar, videolar ve forum siteleri en büyük yardımcım oluyor diyebilirim..</p> 
+		  <h3>Blog Sitemde Bahsedeceğim Konular Bunlardır;</h3>
+		  <ul>
+			<li>Ağ Temelleri</li>
+            <li>Cisco Packet Tracer</li>
+          </ul> 
+		  </td>
+          </tr>
+    </table>
+ </div>
 
 
-  <div class="col-3 col-s-12">
-<div class="aside">
-    <h3>Site İçinde Ara...</h3>
-        <form method="post" action="#" id="search_form">
-         <p>
-          <input class="search" type="text" name="search_field" value="Buraya yazınız....." />
-          <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="search.png" alt="Search" title="Search" />
-         </p>
-        </form>
-         <!--BU KOD ARAMA BUTONU İÇİN.-->
 
-</div>
-</div>
-</div>
-        <!--SİTENİN SAĞ KISIMDAKİ METİN BÖLÜMÜ.-->
+ <div class="col-3 col-s-12">
+ <div class="aside">
+  <h3>Site İçinde Ara...</h3>
+   <form method="post" action="#" id="search_form">
+    <p>
+     <input class="search" type="text" name="search_field" value="Buraya yazınız....." />
+     <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="img/search.png" alt="Search" title="Search" />
+    </p>
+   </form>
+ </div>
+ </div>
+ </div>
 
-<div class="footer">
-  <p><a href="index.html" class="ornek-link">Ana Sayfa</a> | <a href="Hakkımda.html" class="ornek-link">Hakkımda</a> | <a href="Ağİşletmenliği.html" class="ornek-link"><strong>Ağ Temelleri</strong></a> | <a href="ciscopackettracer.html" class="ornek-link">Cisco Packet Tracer</a> | <p><a href="veritabani.html" class="ornek-link">Veri Tabanı</a> | <a href="İletişim.html" class="ornek-link">İletişim</a></p>
+
+ <div class="footer">
+  <p><a href="index.html" class="ornek-link">Ana Sayfa</a> | <a href="Hakkımda.html" class="ornek-link">Hakkımda</a> | <a href="ağtemelleri.html" class="ornek-link">Ağ Temelleri</a> | <a href="ciscopackettracer.html" class="ornek-link">Cisco Packet Tracer</a> | <a href="İletişim.html" class="ornek-link">İletişim</a></p>
   <p>Tüm hakları saklıdır</p>
-         <!--BU KOD SAYFANIN EN ALTINDAKİ MENÜ İÇİN.-->
-</div>
-
+ </div>
 </body>
 </html>
 
